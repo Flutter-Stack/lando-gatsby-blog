@@ -4,7 +4,7 @@ module.exports = {
     title: `Gatsby Default Starter`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    siteUrl: `https://flutter-stack.github.io/lando-gatsby-blog`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
