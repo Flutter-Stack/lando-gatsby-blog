@@ -1,0 +1,27 @@
+name: gatsby-drupal-blog
+
+proxy:
+  appserver:
+    - gatsby-drupal-blog.lndo.site:8000
+
+services:
+  appserver:
+    type: node:16
+    port: 8000
+    ssl: true
+    globals:
+      gatsby-cli: "2.12.62"
+      # yarn: "1.22.4"
+    run:
+      - echo "Installing Gatsby with yarn."
+      - npm install
+
+tooling:
+  # yarn:
+  #   service: appserver
+  gatsby:
+    service: appserver
+  # do not give:
+  #   service: appserver
+  npm:
+    service: appserver
